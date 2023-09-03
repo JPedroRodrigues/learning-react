@@ -156,8 +156,8 @@ document.body.innerText = JSON.stringify(soma);
 
 
 // Template Literals
-const name = 'Joãoão'
-const message = `Bem vindo, ${name ?? 'visitante'}`
+const nomes = 'Joãoão'
+const message = `Bem vindo, ${nomes ?? 'visitante'}`
 
 document.body.innerText = message;
 
