@@ -1,0 +1,75 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+
+    background: #282D35;
+    color: white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #21222A;
+
+    height: 80px;
+    width: 100vw;
+    padding: 0px 26px;
+}
+
+nav div#logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+nav > div#logo > h3 {
+    font: normal 700 22.5px 'Inter', sans-serif;
+    color: #61DAFB;
+}
+
+nav > div#logo > img{
+    width: 28.93px;
+}
+
+main {
+    padding: 57px 27px;
+    background: #282D35 url('./src/assets/reactjs-icon\ 2.svg') center right no-repeat fixed;
+
+    height: 100%;
+}
+
+.mainTitle {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 39px;
+    letter-spacing: -0.05em;
+}
+
+.mainList {
+    /* Para não ocupar todo o espaço direito da tela */
+    max-width: 400px;
+}
+
+.mainList > li {
+    /* Aplica padding somente apenas em cima e em baixo */
+    padding-block: 10px;
+    line-height: 19px;
+}
+
+/* ::marker me permite modificar marcadores de lista */
+.mainList > li::marker {
+    font-size: 1.5em;
+    color: #61DAFB;
+}
