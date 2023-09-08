@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+.container {
+    width: 250px;
+
+    background-color: #1F2024;
+
+    margin: auto;
+    border-radius: 10px;
+
+    color: rgba(255, 255, 255, 0.705);
+}
+
+.infoContainer {
+    text-align: center;
+}
+
+.profilePic {
+    background: #1F2024 url('./assets/edward.png') center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+
+    border-radius: 10px 10px 0px 0px;
+}
+
+#profileInfo {
+    margin: 10px 0px;
+    line-height: 20px;
+    padding: 0px 30px;
+}
+
+#profileInfo h1 {
+    color: white;
+    font: normal 700 'Inter', sans-serif;
+}
+
+#mainLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    list-style: none;
+}
+
+.buttonOne {
+    background-color: white;
+    padding: 7px 25px;
+
+    border-radius: 5px;
+}
+
+.buttonOne > a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.buttonTwo {
+    background-color: #3D5A73;
+    padding: 7px 25px;
+
+    border-radius: 5px;
+}
+
+.buttonTwo > a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+#aboutText {
+    padding: 30px;
+    padding-top: 20px;
+}
+
+#aboutText h2 {
+    color: white;
+    margin: 10px 0px;
+}
+
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    background-color: #161717;
+    border-radius: 0px 0px 10px 10px;
+    padding-block: 5px;
+}
+
+#footer img {
+    height: 48px;
+}
