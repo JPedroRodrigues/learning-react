@@ -1,10 +1,10 @@
 import Nav from './Nav.jsx';
-import heroImage from '../assets/heroImage.svg';
+import Hero from './Hero.jsx';
+import Card from './Card.jsx'
 
 export default function Header() {
     return <header>
         <Nav />
-        <img src={heroImage} alt="Hero image" className='heroImage'/>
-        
+        <Hero />
     </header>
 }

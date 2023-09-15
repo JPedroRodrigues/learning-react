@@ -6,8 +6,12 @@
     box-sizing: border-box;
 }
 
-header {
-    display: grid;
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.gray {
+    color: #918E9B;
 }
 
 nav {
@@ -16,8 +20,40 @@ nav {
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.151);
 }
 
-header > img {
-    place-self: center;
-    margin-top: 2em;
+section {
+    padding: 20px;
 }
 
+.heroSection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.heroImage {
+    max-width: 400px;
+    align-self: center;
+}
+
+.hero--header {
+    margin-bottom: 1em;
+}
+
+.hero--text {
+    margin-top: 0em;
+}
+
+.card {
+    width: 100%;
+    font-size: 12px;
+}
+
+.card--stats {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card--star {
+    height: 10px;
+}
