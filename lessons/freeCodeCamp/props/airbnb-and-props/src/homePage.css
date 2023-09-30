@@ -44,8 +44,17 @@ section {
 }
 
 .card {
-    width: 100%;
+    width: 175px;
     font-size: 12px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.card--image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 9px;
 }
 
 .card--stats {
@@ -55,5 +64,10 @@ section {
 }
 
 .card--star {
-    height: 10px;
+    height: 9px;
+}
+
+.card--row {
+    display: flex;
+    gap: 20px;
 }
