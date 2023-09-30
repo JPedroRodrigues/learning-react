@@ -8,16 +8,17 @@ export default function App() {
     const cards = data.map(card => {
         return (
             <Card
-                // Key ajuda a diferencia o elemento com um ID
-                key={card.id}  
-                img={card.coverImg} 
-                rating={card.stats.rating} 
-                reviewCount={card.stats.reviewCount} location={card.location} 
-                title={card.title} 
-                price={card.price}
-                // Para criação condicional de elementos:
-                openSpots={card.openSpots}
-                />
+                // Key ajuda a diferenciar o elemento com um ID
+                key={card.id} 
+                // Passando todo o objeto como argumento
+                // item={card}
+                {...card}
+
+                // Equivale a
+                // id={card.id}
+                // description={card.description}
+                // ...
+            />
         )
     })
 
