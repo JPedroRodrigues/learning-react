@@ -5,13 +5,26 @@ import './homePage.css'
 import data from "./data.js"
 
 export default function App() {
-    const cards = data.map(card => 
-    <Card img={card.coverImg} rating={card.stats.rating} reviewCount={card.stats.reviewCount} location={card.location} title={card.title} price={card.price}/>
-    )
+    const cards = data.map(card => {
+        return (
+            <Card
+                // Key ajuda a diferencia o elemento com um ID
+                key={card.id}  
+                img={card.coverImg} 
+                rating={card.stats.rating} 
+                reviewCount={card.stats.reviewCount} location={card.location} 
+                title={card.title} 
+                price={card.price}
+                // Para criação condicional de elementos:
+                openSpots={card.openSpots}
+                />
+        )
+    })
+
     return <div>
         <Header />
-        <div className="card--row">
+        <section className="cards--row">
             {cards}
-        </div>
+        </section>
     </div>
 }
