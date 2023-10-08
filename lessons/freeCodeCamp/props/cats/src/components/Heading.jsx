@@ -1,6 +1,6 @@
-export default function Heading() {
+export default function Heading(props) {
     return <div className="container">
-        <h1>Meus gatos (não são meus gatos)</h1>
-        <p>Estes NÃO SÃO MEUS GATOS e eu não tenho nenhuma relação com eles!</p>
+        <h1>Estes não são meus {props.animal}?</h1>
+        <p>Por favor tirem estes gatos daí</p>
     </div>
 }

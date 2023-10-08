@@ -16,7 +16,6 @@ export default function Meme() {
 
         setMeme(prevMeme => {
             return {...prevMeme, randomImage: randomMeme.url};
-            // prevMeme.randomImage = randomMeme.url
         });
     }
 
